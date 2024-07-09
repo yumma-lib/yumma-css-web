@@ -1,0 +1,11 @@
+@media (max-width: 960px) {
+  .interface {
+    flex-direction: column;
+  }
+
+  .code-editor,
+  .code-preview {
+    flex: 1;
+    width: 100vw;
+  }
+}
