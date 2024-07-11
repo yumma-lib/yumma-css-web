@@ -2,7 +2,7 @@ import React from 'react';
 import Editor from '@monaco-editor/react';
 
 const CodeEditor = ({ code, onChange }) => {
-    const handleEditorDidMount = (editor, monaco) => {
+    const handleMount = (editor, monaco) => {
         monaco.editor.defineTheme('yummacss', {
             base: 'vs-dark',
             inherit: true,
@@ -46,7 +46,7 @@ const CodeEditor = ({ code, onChange }) => {
 
     return (
         <Editor
-            language="html"
+            defaultLanguage="html"
             value={code}
             options={{
                 language: 'html',
@@ -55,9 +55,8 @@ const CodeEditor = ({ code, onChange }) => {
                 },
                 fontSize: 14,
             }}
-
             onChange={onChange}
-            onMount={handleEditorDidMount}
+            onMount={handleMount}
         />
     );
 };

@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import CodeEditor from './CodeEditor';
+import { LiveProvider, LivePreview, LiveError } from 'react-live';
+import DOMPurify from 'dompurify';
 
-const Home = () => {
-    const [code, setCode] = useState('');
+const Playground = () => {
+    const [code, setCode] = useState();
 
     useEffect(() => {
         const fetchModel = async () => {
             try {
-                const response = await fetch('/content.html');
-                const model = await response.text();
+                const res = await fetch('/content.html');
+                const model = await res.text();
                 setCode(model);
             } catch (err) {
                 console.error('ERROR:', err.message);
@@ -18,20 +20,26 @@ const Home = () => {
         fetchModel();
     }, []);
 
-    const onChange = (newValue, e) => {
-        setCode(newValue);
+    const onChange = (v, e) => {
+        setCode(v);
     };
 
+    const sanitizedCode = DOMPurify.sanitize(code);
+
     return (
+
         <div className="d-f h-1/1">
             <div className="f-1">
                 <CodeEditor code={code} onChange={onChange} />
             </div>
             <div className="f-1 ovf-auto">
-                {/* React Live */}
+                <LiveProvider code={sanitizedCode}>
+                    <LivePreview />
+                    <LiveError />
+                </LiveProvider>
             </div>
         </div>
     );
 };
 
-export default Home;
+export default Playground;
