@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import CodeEditor from './CodeEditor';
-import CodePreview from './CodePreview';
 
 const Home = () => {
     const [code, setCode] = useState('');
@@ -8,7 +7,7 @@ const Home = () => {
     useEffect(() => {
         const fetchModel = async () => {
             try {
-                const response = await fetch('/model.html');
+                const response = await fetch('/content.html');
                 const model = await response.text();
                 setCode(model);
             } catch (err) {
@@ -24,12 +23,12 @@ const Home = () => {
     };
 
     return (
-        <div className="interface d-f h-1/1">
-            <div className="code-editor f-1">
+        <div className="d-f h-1/1">
+            <div className="f-1">
                 <CodeEditor code={code} onChange={onChange} />
             </div>
-            <div className="code-preview f-1 ovf-auto">
-                <CodePreview html={code} />
+            <div className="f-1 ovf-auto">
+                {/* React Live */}
             </div>
         </div>
     );
