@@ -1,5 +1,6 @@
 'use client';
 
+import './globals.css';
 import { useState, useEffect } from 'react';
 import DOMPurify from 'dompurify';
 import Navbar from './components/Navbar';
@@ -26,7 +27,7 @@ const Home = () => {
     setCode(v);
   };
 
-  const sanitizedCode = code ? DOMPurify.sanitize(code) : 'Something went wrong...';
+  const sanitizedCode = code ? DOMPurify.sanitize(code) : '';
 
   return (
     <main>

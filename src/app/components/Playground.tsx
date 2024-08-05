@@ -1,5 +1,3 @@
-'use client';
-
 import Editor from '@monaco-editor/react';
 import React from 'react';
 import { LiveProvider, LivePreview, LiveError } from 'react-live';
@@ -54,7 +52,7 @@ const Playground: React.FC<PlaygroundProps> = ({ code, onChange }) => {
 
     return (
         <div className="d-f h-1/1">
-            <div className="f-1">
+            <div className="f-1 md:h-full">
                 <Editor
                     defaultLanguage="html"
                     value={code}
@@ -69,10 +67,9 @@ const Playground: React.FC<PlaygroundProps> = ({ code, onChange }) => {
                     onMount={handleMount}
                 />
             </div>
-            <div className="f-1 ovf-auto">
+            <div className="d-none f-1 ovf-auto xl:d-b">
                 <LiveProvider code={code}>
                     <LivePreview />
-                    <LiveError />
                 </LiveProvider>
             </div>
         </div>
