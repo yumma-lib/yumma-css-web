@@ -3,7 +3,7 @@
   "description": "Yumma CSS playground based on Monaco editor.",
   "homepage": "https://yummacss.com",
   "license": "MIT",
-  "name": "yummacss-css-play-v2",
+  "name": "yummacss-css-play",
   "private": true,
   "version": "0.0.1",
   "scripts": {
