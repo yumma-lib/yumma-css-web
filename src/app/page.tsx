@@ -1,6 +1,5 @@
 'use client';
 
-import { LiveProvider, LivePreview, LiveError } from 'react-live';
 import { useState, useEffect } from 'react';
 import DOMPurify from 'dompurify';
 import Navbar from './components/Navbar';
@@ -32,16 +31,8 @@ const Home = () => {
   return (
     <main>
       <Navbar />
-      <div className="d-f h-1/1">
-        <div className="f-1">
-          <Playground code={code} onChange={onChange} />
-        </div>
-        <div className="f-1 ovf-auto">
-          <LiveProvider code={sanitizedCode}>
-            <LivePreview />
-            <LiveError />
-          </LiveProvider>
-        </div>
+      <div>
+        <Playground code={sanitizedCode} onChange={onChange} />
       </div>
     </main>
   );

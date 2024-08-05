@@ -2,6 +2,7 @@
 
 import Editor from '@monaco-editor/react';
 import React from 'react';
+import { LiveProvider, LivePreview, LiveError } from 'react-live';
 
 type PlaygroundProps = {
     code: string | undefined;
@@ -52,19 +53,29 @@ const Playground: React.FC<PlaygroundProps> = ({ code, onChange }) => {
     };
 
     return (
-        <Editor
-            defaultLanguage="html"
-            value={code}
-            options={{
-                language: 'html',
-                minimap: {
-                    enabled: false
-                },
-                fontSize: 14,
-            }}
-            onChange={onChange}
-            onMount={handleMount}
-        />
+        <div className="d-f h-1/1">
+            <div className="f-1">
+                <Editor
+                    defaultLanguage="html"
+                    value={code}
+                    options={{
+                        language: 'html',
+                        minimap: {
+                            enabled: false
+                        },
+                        fontSize: 14,
+                    }}
+                    onChange={onChange}
+                    onMount={handleMount}
+                />
+            </div>
+            <div className="f-1 ovf-auto">
+                <LiveProvider code={code}>
+                    <LivePreview />
+                    <LiveError />
+                </LiveProvider>
+            </div>
+        </div>
     );
 };
 
