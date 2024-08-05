@@ -36,7 +36,7 @@ const Home = () => {
         <div className="f-1">
           <Playground code={code} onChange={onChange} />
         </div>
-        <div className="f-1 ovf-auto sm:f-0">
+        <div className="f-1 ovf-auto">
           <LiveProvider code={sanitizedCode}>
             <LivePreview />
             <LiveError />

@@ -2,10 +2,10 @@ import React from 'react';
 
 const Navbar: React.FC = () => {
     return (
-        <header className="bb-1 bc-l-silver-6 bg-white d-f fs-sm fw-w py-3 sm:fw-nw sm:jc-fs w-full">
+        <header className="bb-1 bc-silver bg-white d-f fs-sm fw-w py-3 sm:fw-nw sm:jc-fs w-full">
             <nav className="mx-auto px-4 sm:ai-c sm:d-f sm:jc-sb w-full">
                 <div className="ai-c d-f jc-sb">
-                    <a className="f-none fs-xl fw-600" href="/">Yumma CSS Play <span className="ai-c b-1 bc-l-pink-4 bg-l-pink-6 cg-6 d-if fs-xs fw-500 px-2 py-1 rad-1 tc-pink">Alpha</span></a>
+                    <p className="f-none fs-xl fw-600">Yumma CSS Play <span className="ai-c b-1 bc-l-pink-4 bg-l-pink-6 cg-6 d-if fs-xs fw-500 px-2 py-1 rad-1 tc-pink">Alpha</span></p>
                     <div className="sm:d-none">
                         <button className="c-p ai-c b-1 bc-l-silver-6 bg-white bs-sm cg-2 d-if jc-c p-2 rad-2 t-d-silver-6">
                             <svg className="dim-4 fs-0" width="24px" height="24px" strokeWidth="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
