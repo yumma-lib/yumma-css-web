@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://yummacss.com/img/icon/favicon.ico" alt="Yumma CSS Logo">
+  <img src="https://www.yummacss.com/_astro/yma-light.BmOem_Nh.svg" height="64" alt="Yumma CSS Logo">
 </p>
 
 <h3 align="center">Yumma CSS Pay</h3>

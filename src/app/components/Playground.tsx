@@ -1,8 +1,15 @@
-import React from 'react';
-import Editor from '@monaco-editor/react';
+'use client';
 
-const CodeEditor = ({ code, onChange }) => {
-    const handleMount = (editor, monaco) => {
+import Editor from '@monaco-editor/react';
+import React from 'react';
+
+type PlaygroundProps = {
+    code: string | undefined;
+    onChange: (value: string | undefined, event: any) => void;
+};
+
+const Playground: React.FC<PlaygroundProps> = ({ code, onChange }) => {
+    const handleMount = (editor: any, monaco: any) => {
         monaco.editor.defineTheme('yummacss', {
             base: 'vs-dark',
             inherit: true,
@@ -61,4 +68,4 @@ const CodeEditor = ({ code, onChange }) => {
     );
 };
 
-export default CodeEditor;
+export default Playground;
