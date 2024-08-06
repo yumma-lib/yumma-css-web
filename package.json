@@ -1,6 +1,6 @@
 {
   "author": "Renildo Pereira",
-  "description": "Yumma CSS playground based on Monaco editor.",
+  "description": "Yumma CSS playground based on Sandpack.",
   "homepage": "https://yummacss.com",
   "license": "MIT",
   "name": "yummacss-css-play",
