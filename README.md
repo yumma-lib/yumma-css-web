@@ -1,11 +1,7 @@
-<p align="center">
-  <img src="https://www.yummacss.com/_astro/yma-light.BmOem_Nh.svg" height="64" alt="Yumma CSS Logo">
-</p>
-
 <h3 align="center">Yumma CSS Pay</h3>
 
 <p align="center">
-  Yumma CSS playground based on Monaco editor.
+  Yumma CSS playground based on Sandpack.
   <br>
   <a href="https://yummacss.com"><strong>Explore Yumma CSS Docs ↝</strong></a>
   <br>
@@ -33,12 +29,12 @@
 
 ## Get started
 
-Yumma CSS Play is designed to make your Visual Studio Code development experience more enjoyable. Get [Yumma CSS Intellisense from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=yumma-css.yumma-css-intellisense).
+Yumma CSS Play is designed to make your development experience more enjoyable.
 
 ## What's in the box?
 
-- **Monaco Editor:** Monaco Editor is the code editor that powers VS Code.
-- **Live Preview:** Preview your code changes using Yumma CSS classes.
+- **Sandpack Code Editor:** Powerful code editor.
+- **Sandpack Code Preview:** Watch code changes in real time.
 
 ## Community
 
