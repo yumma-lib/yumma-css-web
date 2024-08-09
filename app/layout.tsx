@@ -1,10 +1,10 @@
-import { Inter } from 'next/font/google';
+import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: 'Yumma CSS Play',
-  description: 'Yumma CSS playground based on Sandpack.',
+  title: "Yumma CSS Play",
+  description: "Yumma CSS playground based on Sandpack.",
 };
 
 export default function RootLayout({
@@ -15,12 +15,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yumma-lib/yumma-css@release/dist/yumma.css"
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/yumma-lib/yumma-css@release/dist/yumma.css"
         />
       </head>
-      <body className={inter.className}>
-        {children}
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
