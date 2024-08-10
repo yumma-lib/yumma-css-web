@@ -14,10 +14,6 @@ const Playground: React.FC = () => {
         code: content,
         active: true,
       },
-      "/page.html": {
-        code: "",
-        active: false,
-      },
     });
   }, []);
 
