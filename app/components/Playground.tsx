@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
-import { Sandpack } from "@codesandbox/sandpack-react";
 import { content } from "../../public/content";
+import { Sandpack } from "@codesandbox/sandpack-react";
 import customTheme from "../theme";
+import React, { useEffect, useState } from "react";
 
 const Playground: React.FC = () => {
   const [files, setFiles] = useState<{
@@ -28,10 +28,12 @@ const Playground: React.FC = () => {
       options={{
         closableTabs: true,
         editorHeight: "100dvh",
+
         externalResources: [
           "https://cdn.jsdelivr.net/gh/yumma-lib/yumma-css@release/dist/yumma.min.css",
         ],
         showInlineErrors: true,
+        showRefreshButton: false,
         showTabs: true,
       }}
       theme={customTheme}
