@@ -1,13 +1,10 @@
 const Navbar = () => {
   return (
-    <header className="bg-white d-f fs-sm fw-w py-3 sm:fw-nw sm:jc-fs w-full">
+    <header className="bb-1 bc-l-silver-6 bg-white d-f fs-sm fw-w py-3 sm:fw-nw sm:jc-fs w-full">
       <nav className="mx-auto px-4 sm:ai-c sm:d-f sm:jc-sb w-full">
         <div className="ai-c d-f jc-sb">
           <p className="f-none fs-xl fw-600">
-            Yumma CSS Play{" "}
-            <span className="ai-c b-1 bc-l-pink-4 bg-l-pink-6 cg-6 d-if fs-xs fw-500 px-2 py-1 rad-1 tc-pink">
-              Alpha
-            </span>
+            Yumma CSS Play
           </p>
           <div className="sm:d-none">
             <button className="c-p ai-c b-1 bc-l-silver-6 bg-white bs-sm cg-2 d-if jc-c p-2 rad-2 t-d-silver-6">
