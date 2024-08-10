@@ -1,15 +1,5 @@
 # dependencies
-/node_modules
-
-# testing
-/coverage
-
-# next.js
-/.next/
-/out/
-
-# production
-/build
+node_modules/
 
 # debug
 npm-debug.log*
@@ -17,8 +7,12 @@ npm-debug.log*
 # local env files
 .env*.local
 
-# vercel
-.vercel
+# next.js
+.next/
+out/
+
+# production
+build/
 
 # typescript
 *.tsbuildinfo
