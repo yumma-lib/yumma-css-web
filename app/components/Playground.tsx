@@ -1,5 +1,6 @@
 import { content } from "../../public/content";
 import { Sandpack } from "@codesandbox/sandpack-react";
+import { welcome } from "../../public/welcome";
 import customTheme from "../theme";
 import React, { useEffect, useState } from "react";
 
@@ -13,6 +14,10 @@ const Playground: React.FC = () => {
       "/index.html": {
         code: content,
         active: true,
+      },
+      "/welcome.html": {
+        code: welcome,
+        active: false,
       },
     });
   }, []);
@@ -30,6 +35,7 @@ const Playground: React.FC = () => {
         showInlineErrors: true,
         showRefreshButton: false,
         showTabs: true,
+        visibleFiles: ["/index.html", "/welcome.html"],
       }}
       theme={customTheme}
     />

@@ -16,7 +16,7 @@ const customTheme: SandpackTheme = {
   syntax: {
     plain: "#b9bed5",
     comment: {
-      color: "#757575",
+      color: "#b9bed5",
       fontStyle: "italic",
     },
     definition: "#85b1e0",
