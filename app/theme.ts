@@ -10,7 +10,7 @@ const customTheme: SandpackTheme = {
     errorSurface: "#c24038",
     hover: "#ffffff",
     surface1: "#1f212a",
-    surface2: "transparent",
+    surface2: "#1f212a",
     surface3: "#1a1c22",
   },
   syntax: {
