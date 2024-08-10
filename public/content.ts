@@ -4,19 +4,19 @@ export const content: string = `<div class="bg-l-silver-6 h-1/1 ins">
         <p class="mb-6 t-d-silver-6">Here's some of the features Yumma CSS Play offers:</p>
         <ul class="s-y-4">
             <li class="ai-c d-f t-d-silver-6">
-                <svg class="dim-6 fs-0 tc-pink" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor">
+                <svg class="dim-6 fs-0 tc-pink" stroke-width="1.5" viewBox="0 0 24 24" fill="none" color="currentColor">
                     <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg>
                 <p class="ml-2">Integration with Yumma CSS.</p>
             </li>
             <li class="ai-c d-f t-d-silver-6">
-                <svg class="dim-6 fs-0 tc-pink" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor">
+                <svg class="dim-6 fs-0 tc-pink" stroke-width="1.5" viewBox="0 0 24 24" fill="none" color="currentColor">
                     <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg>
                 <p class="ml-2">Auto-completion.</p>
             </li>
             <li class="ai-c d-f t-d-silver-6">
-                <svg class="dim-6 fs-0 tc-pink" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor">
+                <svg class="dim-6 fs-0 tc-pink" stroke-width="1.5" viewBox="0 0 24 24" fill="none" color="currentColor">
                     <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg>
                 <p class="ml-2">Real-time preview changes.</p>
