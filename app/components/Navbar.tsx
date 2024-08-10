@@ -3,9 +3,7 @@ const Navbar = () => {
     <header className="bb-1 bc-l-silver-6 bg-white d-f fs-sm fw-w py-3 sm:fw-nw sm:jc-fs w-full">
       <nav className="mx-auto px-4 sm:ai-c sm:d-f sm:jc-sb w-full">
         <div className="ai-c d-f jc-sb">
-          <p className="f-none fs-xl fw-600">
-            Yumma CSS Play
-          </p>
+          <p className="f-none fs-xl fw-600">Yumma CSS Play</p>
           <div className="sm:d-none">
             <button className="c-p ai-c b-1 bc-l-silver-6 bg-white bs-sm cg-2 d-if jc-c p-2 rad-2 tc-d-silver-6">
               <svg
