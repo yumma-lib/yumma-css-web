@@ -5,12 +5,10 @@ import Playground from "./components/Playground";
 
 const Home = () => {
   return (
-    <main>
+    <>
       <Navbar />
-      <div>
-        <Playground />
-      </div>
-    </main>
+      <Playground />
+    </>
   );
 };
 

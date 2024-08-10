@@ -2,6 +2,8 @@ import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
+import "./styles/globals.css";
+
 export const metadata = {
   title: "Yumma CSS Play",
   description: "Yumma CSS playground based on Sandpack.",
