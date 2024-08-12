@@ -23,7 +23,7 @@ const customTheme: SandpackTheme = {
     keyword: "#85b1e0",
     property: "#dda2f6",
     punctuation: "#939293",
-    static: "rgb(171, 157, 242)",
+    static: "#ab9df2",
     string: "#9aefea",
     tag: "#85b1e0",
   },

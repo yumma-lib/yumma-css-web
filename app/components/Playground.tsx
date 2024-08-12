@@ -30,7 +30,7 @@ const Playground: React.FC = () => {
         closableTabs: true,
         editorHeight: "100dvh",
         externalResources: [
-          "https://cdn.jsdelivr.net/gh/yumma-lib/yumma-css@release/dist/yumma.min.css",
+          "https://cdn.jsdelivr.net/gh/yumma-lib/yumma-css@2.0.0/dist/yumma.min.css",
         ],
         showInlineErrors: true,
         showRefreshButton: false,
