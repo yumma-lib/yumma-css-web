@@ -1,5 +1,4 @@
-export const content: string = `
-<header class="bb-1 bc-l-silver-6 bg-white d-f fs-sm fw-w py-4 sm:fw-nw sm:jc-fs w-full">
+export const content: string = `<header class="bb-1 bc-l-silver-6 bg-white d-f fs-sm fw-w py-4 sm:fw-nw sm:jc-fs w-full">
     <nav class="mx-auto px-4 sm:ai-c sm:d-f sm:jc-sb w-full">
         <div class="ai-c d-f jc-sb">
             <a class="f-none fs-xl fw-600" href="#">Yumma OS</a>
@@ -80,5 +79,4 @@ export const content: string = `
             </div>
         </div>
     </footer>
-</div>
-`;
+</div>`;
