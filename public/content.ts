@@ -33,7 +33,7 @@ export const content: string = `<header class="bb-1 bc-l-silver-6 bg-white d-f f
     </a>
 </div>
 
-<div class="b-1 h-1/1 m-4 rad-2 bc-l-silver-6">
+<div class="b-d b-2 b-1 h-1/1 m-4 rad-2 bc-l-silver-6">
   <div class="f-1 f-auto fd-c h-1/1 ins md:p-5 p-4">
         <p class="fs-sm mt-2 tc-l-lead-4">Add your content here.</p>
     </div>
