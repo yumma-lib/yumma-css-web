@@ -28,7 +28,7 @@ const Playground: React.FC = () => {
       files={files}
       options={{
         closableTabs: true,
-        editorHeight: "100dvh",
+        editorHeight: "94dvh",
         externalResources: [
           "https://cdn.jsdelivr.net/gh/yumma-lib/yumma-css@2.0.0/dist/yumma.min.css",
         ],
