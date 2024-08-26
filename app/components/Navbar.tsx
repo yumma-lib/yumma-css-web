@@ -1,6 +1,12 @@
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
 const Navbar = () => {
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => setDropdownOpen((prev) => !prev);
+
   return (
     <header
       className="d-f fs-sm fw-w py-3 sm:fw-nw sm:jc-fs w-full"
@@ -19,6 +25,7 @@ const Navbar = () => {
             <button
               className="c-p ai-c b-1 bc-l-silver-6 bs-sm cg-2 d-if jc-c p-2 rad-2 tc-white"
               style={{ backgroundColor: "#1a1c22" }}
+              onClick={toggleDropdown}
             >
               <svg
                 className="dim-4 fs-0"
@@ -54,28 +61,37 @@ const Navbar = () => {
             </button>
           </div>
         </div>
-        <div className="d-none fb-full fg-1 ovf-h sm:d-b">
-          <div className="d-f fd-c g-5 sm:ai-c sm:fd-r sm:jc-fe sm:pl-5">
-            <a
-              className="fw-500 h:tc-l-gray-6 tc-white"
-              href="https://www.yummacss.com/docs/installation"
+        <AnimatePresence>
+          {isDropdownOpen && (
+            <motion.div
+              className="d-f fd-c g-5 sm:ai-c sm:fd-r sm:jc-fe sm:pl-5"
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: "auto" }}
+              exit={{ opacity: 0, height: 0 }}
+              transition={{ duration: 0.3 }}
+              style={{ overflow: "hidden" }}
             >
-              Docs
-            </a>
-            <a
-              className="fw-500 h:tc-l-gray-6 tc-white"
-              href="https://www.yummacss.com/components"
-            >
-              Components
-            </a>
-            <a
-              className="fw-500 h:tc-l-gray-6 tc-white"
-              href="https://www.yummacss.com/blog"
-            >
-              Blog
-            </a>
-          </div>
-        </div>
+              <a
+                className="fw-500 h:tc-l-gray-6 tc-white"
+                href="https://www.yummacss.com/docs/installation"
+              >
+                Docs
+              </a>
+              <a
+                className="fw-500 h:tc-l-gray-6 tc-white"
+                href="https://www.yummacss.com/components"
+              >
+                Components
+              </a>
+              <a
+                className="fw-500 h:tc-l-gray-6 tc-white"
+                href="https://www.yummacss.com/blog"
+              >
+                Blog
+              </a>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </nav>
     </header>
   );
