@@ -1,7 +1,5 @@
 import { Inter } from "next/font/google";
 import { Metadata } from "next";
-import icon from "../public/icon.png";
-import appleIcon from "../public/apple-icon.png";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,8 +9,8 @@ export const metadata: Metadata = {
   title: "Yumma CSS Play",
   description: "Yumma CSS Playground based on Sandpack.",
   icons: {
-    icon: `${icon}`,
-    apple: `${appleIcon}`,
+    icon: "/icon.png",
+    apple: "/apple-icon.png",
   },
 };
 
