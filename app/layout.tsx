@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Yumma CSS Play",
   description: "Yumma CSS Playground based on Sandpack.",
   icons: {
-    icon: "icon.png",
+    icon: "/icon.png",
     apple: "apple-icon.png"
   }
 };
