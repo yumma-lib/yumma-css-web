@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   icons: {
     icon: `${icon}`,
     apple: `${appleIcon}`,
-  }
+  },
 };
 
 export default function RootLayout({
