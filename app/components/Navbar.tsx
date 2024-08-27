@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import logo from  "../assets/img/logo.png"
 
 const Navbar = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
@@ -18,7 +19,7 @@ const Navbar = () => {
             alt="Logo"
             className="h-auto"
             height={140}
-            src="/logo.png"
+            src={logo}
             width={140}
           />
           <div className="sm:d-none">
