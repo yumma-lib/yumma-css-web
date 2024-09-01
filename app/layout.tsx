@@ -12,6 +12,18 @@ export const metadata: Metadata = {
     icon: "https://play.yummacss.com/favicon.ico",
     apple: "https://play.yummacss.com/apple-icon.png",
   },
+  openGraph: {
+    title: "Yumma CSS Play",
+    description: "Yumma CSS Playground based on Sandpack.",
+    siteName: "Yumma CSS Play",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "https://www.yummacss.com/og.png",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
