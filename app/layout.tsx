@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.yummacss.com/og.png",
+        url: "https://play.yummacss.com/og.png",
       },
     ],
   },
