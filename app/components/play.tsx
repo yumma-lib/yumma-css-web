@@ -16,6 +16,7 @@ const Playground: React.FC = () => {
         ],
         editorHeight: "90dvh",
         showInlineErrors: true,
+        showLineNumbers: true,
         showRefreshButton: false,
         showTabs: true,
         wrapContent: true,
