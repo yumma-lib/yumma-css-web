@@ -1,4 +1,4 @@
-import { sandpackContent } from "./constants/content";
+import { pageContent } from "./constants/content";
 import { Sandpack } from "@codesandbox/sandpack-react";
 import customTheme from "../theme";
 
@@ -16,7 +16,7 @@ const Playground: React.FC = () => {
         showTabs: true,
       }}
       files={{
-        "/index.html": sandpackContent,
+        "/index.html": pageContent,
       }}
       theme={customTheme}
     />

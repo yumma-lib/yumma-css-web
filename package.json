@@ -13,14 +13,11 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@codemirror/autocomplete": "^6.18.0",
     "@codesandbox/sandpack-client": "^2.18.2",
     "@codesandbox/sandpack-react": "^2.18.2",
-    "framer-motion": "^11.3.30",
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
-    "react-split": "^2.0.14",
     "yummacss": "^2.0.0"
   },
   "devDependencies": {
