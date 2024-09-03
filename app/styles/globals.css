@@ -1,9 +1,1 @@
-@import "yummacss/dist/yumma-core.min.css";
-
-html,
-body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow: hidden;
-}
+@import "yummacss/dist/yumma.min.css";

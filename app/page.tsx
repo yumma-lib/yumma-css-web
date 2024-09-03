@@ -1,9 +1,11 @@
 "use client";
-import Playground from "./components/Playground";
+import Navbar from "./components/navbar";
+import Playground from "./components/playground";
 
 const Home = () => {
   return (
     <>
+      <Navbar />
       <Playground />
     </>
   );
