@@ -1,1 +1,5 @@
 @import "yummacss/dist/yumma.min.css";
+
+body {
+    background-color: #1f212a;
+}

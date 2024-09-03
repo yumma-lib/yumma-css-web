@@ -7,16 +7,15 @@ const Playground: React.FC = () => {
     <Sandpack
       template="static"
       options={{
-        editorHeight: "92.9dvh",
         externalResources: [
           "https://cdn.jsdelivr.net/gh/yumma-lib/yumma-css@2.0.0/dist/yumma.min.css",
         ],
+        editorHeight: "90dvh",
         showInlineErrors: true,
-        showRefreshButton: false,
         showTabs: true,
       }}
       files={{
-        "/index.html": pageContent,
+        "/index.html": pageContent
       }}
       theme={customTheme}
     />
