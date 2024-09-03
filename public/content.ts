@@ -81,8 +81,7 @@ export const pageContent: string = `<header class="bb-1 bc-l-silver-6 bg-white d
     </footer>
 </div>`;
 
-export const welcomeComment: string = `
-<!--
+export const welcomeComment: string = `<!--
 Hi, I'm Renildo Pereira, the creator of Yumma CSS.
 I just wanted to say a big, heartfelt thank you for trying Yumma CSS Playground!
 It means that Yumma CSS has your attention. Thank you so much! Happy coding!
