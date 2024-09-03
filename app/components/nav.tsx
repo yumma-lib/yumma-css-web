@@ -19,7 +19,7 @@ const Navbar = () => {
         </div>
         <div className="fb-full fg-1 ovf-h">
           <div className="d-f fd-c g-5 sm:ai-c sm:fd-r sm:jc-fe sm:pl-5">
-            <p className="fw-700 h:tc-l-gray-6 tc-white">v1.0</p>
+            <p className="fw-700 h:tc-l-gray-6 md:d-none tc-white">v1.0</p>
           </div>
         </div>
       </nav>
