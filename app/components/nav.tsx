@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Logo from "../assets/img/logo.png";
 
 const Navbar = () => {
   return (
@@ -12,7 +13,7 @@ const Navbar = () => {
             alt="Logo"
             className="h-auto"
             height={140}
-            src="/logo.png"
+            src={Logo}
             width={140}
           />
         </div>
