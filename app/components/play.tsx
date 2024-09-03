@@ -12,10 +12,12 @@ const Playground: React.FC = () => {
         ],
         editorHeight: "90dvh",
         showInlineErrors: true,
+        showRefreshButton: false,
         showTabs: true,
+        wrapContent: true,
       }}
       files={{
-        "/index.html": pageContent
+        "index.html": pageContent,
       }}
       theme={customTheme}
     />
