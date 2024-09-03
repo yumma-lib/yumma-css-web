@@ -17,11 +17,6 @@ const Navbar = () => {
             width={140}
           />
         </div>
-        <div className="fb-full fg-1 ovf-h">
-          <div className="d-f fd-c g-5 sm:ai-c sm:fd-r sm:jc-fe sm:pl-5">
-            <p className="fw-700 h:tc-l-gray-6 md:d-none tc-white">v1.0</p>
-          </div>
-        </div>
       </nav>
     </header>
   );
