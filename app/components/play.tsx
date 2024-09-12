@@ -1,4 +1,4 @@
-import { pageContent } from "./constants/content";
+import { pageContent } from "../constants/content";
 import { Sandpack } from "@codesandbox/sandpack-react";
 import customTheme from "../theme";
 import { autocompletion } from "@codemirror/autocomplete";
