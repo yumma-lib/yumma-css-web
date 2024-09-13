@@ -18,7 +18,6 @@ const Playground: React.FC = () => {
         showInlineErrors: true,
         showLineNumbers: true,
         showRefreshButton: false,
-        showTabs: true,
         wrapContent: true,
       }}
       files={{
