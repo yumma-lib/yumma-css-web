@@ -16,7 +16,7 @@ export const pageContent: string = `<header class="bb-1 bc-l-silver-6 d-f fs-sm 
       <div class="d-f fd-c g-5 sm:ai-c sm:fd-r sm:jc-fe sm:pl-5">
         <a class="fw-600 tc-indigo" href="#">Link 1</a>
         <a class="fw-600 h:tc-black tc-lead" href="#">Link 2</a>
-        <a class="fw-600 h:tc-black tc-lead" href="#">Link 2</a>
+        <a class="fw-600 h:tc-black tc-lead" href="#">Link 3</a>
       </div>
     </div>
   </nav>
@@ -72,50 +72,5 @@ export const pageContent: string = `<header class="bb-1 bc-l-silver-6 d-f fs-sm 
     <p class="mb-4 fs-sm tc-gray">Enim et est excepteur laboris consectetur ea mollit nulla deserunt.</p>
     <a href="/" class="tc-indigo h:tc-d-indigo-1 fs-sm tdl-u">Link to page</a>
   </div>
-</div>
-
-<div class="d-g">
-  <footer class="bc-l-silver-6 bt-1 mx-auto mt-auto w-full bg-white px-4 py-10 sm:px-6 lg:px-8">
-    <div class="d-g g-6 gtc-2 lg:gtc-5 md:gtc-4 mb-10">
-      <div class="d-none lg:d-b">
-        <a class="fs-xl fw-600" href="#">Yumma OS</a>
-        <p class="fs-xs sm:fs-sm tc-gray mt-3">© 2024 Example.</p>
-      </div>
-      <div>
-        <h4 class="fs-xs fw-600 tc-d-gray-6">PRODUCTS</h4>
-        <div class="fs-sm s-y-3 mt-3">
-          <p><a class="h:tc-d-gray-4 tc-gray" href="#">API</a></p>
-          <p><a class="h:tc-d-gray-4 tc-gray" href="#">Integrations</a></p>
-        </div>
-      </div>
-      <div>
-        <h4 class="fs-xs fw-600 tc-d-gray-6">SOLUTIONS</h4>
-        <div class="fs-sm s-y-3 mt-3">
-          <p><a class="h:tc-d-gray-4 tc-gray" href="#">Marketing</a></p>
-          <p><a class="h:tc-d-gray-4 tc-gray" href="#">Support</a></p>
-          <p><a class="h:tc-d-gray-4 tc-gray" href="#">Documentation</a></p>
-        </div>
-      </div>
-      <div>
-        <h4 class="fs-xs fw-600 tc-d-gray-6">RESOURCES</h4>
-        <div class="fs-sm s-y-3 mt-3">
-          <p><a class="h:tc-d-gray-4 tc-gray" href="#">Blog</a></p>
-          <p><a class="h:tc-d-gray-4 tc-gray" href="#">Help center</a></p>
-          <p><a class="h:tc-d-gray-4 tc-gray" href="#">Status</a></p>
-        </div>
-      </div>
-      <div>
-        <h4 class="fs-xs fw-600 tc-d-gray-6">DEVELOPERS</h4>
-        <div class="fs-sm s-y-3 mt-3">
-          <p><a class="h:tc-d-gray-4 tc-gray" href="#">Get started</a></p>
-          <p>
-            <a class="tc-gray h:tc-d-gray-4" href="#">API docs</a>
-            <span class="tc-indigo">— We're hiring</span>
-          </p>
-          <p><a class="h:tc-d-gray-4 tc-gray" href="#">Community</a></p>
-        </div>
-      </div>
-    </div>
-  </footer>
 </div>
 `;
