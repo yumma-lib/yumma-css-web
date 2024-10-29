@@ -4,7 +4,7 @@ import Logo from "../../public/assets/logo.png";
 const Navbar = () => {
   return (
     <header
-      className="d-f fs-sm fw-w py-3 sm:fw-nw sm:jc-fs w-full"
+      className="d-f fs-sm fw-w py-1 sm:fw-nw sm:jc-fs w-full"
       style={{ backgroundColor: "#1f212a" }}
     >
       <nav className="mx-auto px-4 sm:ai-c sm:d-f sm:jc-sb w-full">
