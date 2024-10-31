@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://yummacss.com" target="_blank">
+  <a href="https://yummacss.com" target="_blank" target="_blank" rel="noopener noreferrer">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://www.yummacss.com/assets/vectors/dark-logo.svg">
       <source media="(prefers-color-scheme: light)" srcset="https://www.yummacss.com/assets/vectors/light-logo.svg">
