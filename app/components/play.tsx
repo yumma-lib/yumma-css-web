@@ -12,7 +12,7 @@ const Playground: React.FC = () => {
           extensions: [autocompletion()],
         },
         externalResources: [
-          "../../node_modules/yummacss/dist/yumma-core.min.css",
+          "https://cdn.jsdelivr.net/gh/yumma-lib/yumma-css@latest/dist/yumma.css",
         ],
         editorHeight: "90dvh",
         showInlineErrors: true,
