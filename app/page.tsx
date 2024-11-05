@@ -1,4 +1,5 @@
 "use client";
+
 import Navbar from "./components/nav";
 import Playground from "./components/play";
 
