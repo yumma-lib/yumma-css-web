@@ -15,9 +15,9 @@
   "dependencies": {
     "@codesandbox/sandpack-client": "^2.18.2",
     "@codesandbox/sandpack-react": "^2.18.2",
-    "next": "14.2.5",
-    "react": "^18",
-    "react-dom": "^18",
+    "next": "^15.0.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "yummacss": "^2.1.0"
   },
   "devDependencies": {
