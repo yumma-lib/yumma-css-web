@@ -1,8 +1,9 @@
 import { autocompletion } from "@codemirror/autocomplete";
+import { completionSource } from "../completions";
+import { customCmTheme } from "../themes/cmTheme";
 import { pageContent } from "../constants/content";
 import { Sandpack } from "@codesandbox/sandpack-react";
-import customTheme from "../theme";
-import { completionSource } from "../completions";
+import customSpTheme from "../themes/spTheme";
 
 const Playground: React.FC = () => {
   return (
@@ -10,7 +11,7 @@ const Playground: React.FC = () => {
       template="static"
       options={{
         codeEditor: {
-          extensions: [autocompletion({ override: [completionSource] })],
+          extensions: [autocompletion({ override: [completionSource] }), customCmTheme],
         },
         externalResources: ["https://cdn.jsdelivr.net/gh/yumma-lib/yumma-css@latest/dist/yumma.css"],
         editorHeight: "90dvh",
@@ -22,7 +23,7 @@ const Playground: React.FC = () => {
       files={{
         "index.html": pageContent,
       }}
-      theme={customTheme}
+      theme={customSpTheme}
     />
   );
 };

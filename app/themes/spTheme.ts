@@ -1,6 +1,6 @@
 import { SandpackTheme } from "@codesandbox/sandpack-react";
 
-const customTheme: SandpackTheme = {
+const customSpTheme: SandpackTheme = {
   colors: {
     accent: "#ffffff",
     base: "#85b1e0",
@@ -35,4 +35,4 @@ const customTheme: SandpackTheme = {
   },
 };
 
-export default customTheme;
+export default customSpTheme;

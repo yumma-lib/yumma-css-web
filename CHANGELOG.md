@@ -6,11 +6,14 @@ All notable changes to the Yumma CSS Play will be documented in this file.
 
 ### Added
 
+- Add `/theme/cmTheme.ts` file
+- Add styling to completions menu
 - Add utility class completions
 
 ### Changed
 
-- None
+- Rename `theme.ts` to `/theme/spTheme.ts`
+- Update `extensions` object
 
 ### Removed
 
