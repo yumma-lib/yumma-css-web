@@ -1,8 +1,7 @@
 import { Completion, CompletionContext } from "@codemirror/autocomplete";
+import utilities from "./completions.json";
 
-export const utilityCompletions: Completion[] = [
-  // { label: "d-f", type: "keyword", info: "display: flex" },
-];
+export const utilityCompletions: Completion[] = utilities;
 
 export function completionSource(context: CompletionContext) {
   let word = context.matchBefore(/\w*/);

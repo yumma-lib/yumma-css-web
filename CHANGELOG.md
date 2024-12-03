@@ -2,11 +2,11 @@
 
 All notable changes to the Yumma CSS Play will be documented in this file.
 
-## [0.0.1]
+## [0.1.0]
 
 ### Added
 
-- None
+- Add utility class completions
 
 ### Changed
 
@@ -14,4 +14,4 @@ All notable changes to the Yumma CSS Play will be documented in this file.
 
 ### Removed
 
-- None
+- Remove
