@@ -6,16 +6,16 @@ const inter = Inter({ subsets: ["latin"] });
 import "./styles/globals.css";
 
 export const metadata: Metadata = {
-  title: "Yumma CSS Play",
-  description: "Yumma CSS Playground based on Sandpack.",
+  title: "Yumma Playground",
+  description: "Yumma Playground based on Sandpack.",
   icons: {
     icon: "https://play.yummacss.com/favicon.ico",
     apple: "https://play.yummacss.com/apple-icon.png",
   },
   openGraph: {
-    title: "Yumma CSS Play",
-    description: "Yumma CSS Playground based on Sandpack.",
-    siteName: "Yumma CSS Play",
+    title: "Yumma Playground",
+    description: "Yumma Playground based on Sandpack.",
+    siteName: "Yumma Playground",
     locale: "en_US",
     type: "website",
     images: [
