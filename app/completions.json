@@ -23840,17 +23840,17 @@
         "info": "caret-color: #19191f;"
     },
     {
-        "label": "ccwhite",
+        "label": "cc-white",
         "type": "keyword",
         "info": "caret-color: #ffffff;"
     },
     {
-        "label": "ccblack",
+        "label": "cc-black",
         "type": "keyword",
         "info": "caret-color: #000000;"
     },
     {
-        "label": "cctransparent",
+        "label": "cc-transparent",
         "type": "keyword",
         "info": "caret-color: transparent;"
     },
@@ -24700,17 +24700,17 @@
         "info": "color: #19191f;"
     },
     {
-        "label": "tcwhite",
+        "label": "tc-white",
         "type": "keyword",
         "info": "color: #ffffff;"
     },
     {
-        "label": "tcblack",
+        "label": "tc-black",
         "type": "keyword",
         "info": "color: #000000;"
     },
     {
-        "label": "tctransparent",
+        "label": "tc-transparent",
         "type": "keyword",
         "info": "color: transparent;"
     },
@@ -25560,17 +25560,17 @@
         "info": "outline-color: #19191f;"
     },
     {
-        "label": "ocwhite",
+        "label": "oc-white",
         "type": "keyword",
         "info": "outline-color: #ffffff;"
     },
     {
-        "label": "ocblack",
+        "label": "oc-black",
         "type": "keyword",
         "info": "outline-color: #000000;"
     },
     {
-        "label": "octransparent",
+        "label": "oc-transparent",
         "type": "keyword",
         "info": "outline-color: transparent;"
     },
@@ -26420,17 +26420,17 @@
         "info": "text-decoration-color: #19191f;"
     },
     {
-        "label": "tdcwhite",
+        "label": "tdc-white",
         "type": "keyword",
         "info": "text-decoration-color: #ffffff;"
     },
     {
-        "label": "tdcblack",
+        "label": "tdc-black",
         "type": "keyword",
         "info": "text-decoration-color: #000000;"
     },
     {
-        "label": "tdctransparent",
+        "label": "tdc-transparent",
         "type": "keyword",
         "info": "text-decoration-color: transparent;"
     }
