@@ -8,11 +8,6 @@ const Navbar = () => {
         <div className="ai-c d-f jc-sb">
           <Image alt="Yumma CSS Play Logo" className="h-auto" height={140} src={Logo} width={140} />
         </div>
-        <div className="fb-full fg-1 ovf-h">
-          <div className="d-f fd-c g-5 sm:ai-c sm:fd-r sm:jc-fe sm:pl-5">
-            <p className="c-p fs-b fw-600 h:tc-l-gray-6 tc-l-silver-6">v0.1.0</p>
-          </div>
-        </div>
       </nav>
     </header>
   );

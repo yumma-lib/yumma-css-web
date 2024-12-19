@@ -7,7 +7,7 @@ const customSpTheme: SandpackTheme = {
     clickable: "#65737f",
     disabled: "#cccccc",
     error: "#ffcdca",
-    errorSurface: "#c24038",
+    errorSurface: "#1f212a",
     hover: "#ffffff",
     surface1: "#1f212a",
     surface2: "#1f212a",

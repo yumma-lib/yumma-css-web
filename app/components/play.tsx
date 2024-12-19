@@ -1,28 +1,36 @@
 import { autocompletion } from "@codemirror/autocomplete";
 import { completionSource } from "../completions";
 import { customCmTheme } from "../themes/cmTheme";
-import { pageContent } from "../constants/content";
+import { app, styles } from "../constants/content";
 import { Sandpack } from "@codesandbox/sandpack-react";
 import customSpTheme from "../themes/spTheme";
 
 const Playground: React.FC = () => {
   return (
     <Sandpack
-      template="static"
+      customSetup={{
+        
+        dependencies: {
+          yummacss: "latest",
+        },
+      }}
+      files={{
+        "App.js": app,
+        "styles.css": styles,
+      }}
       options={{
         codeEditor: {
           extensions: [autocompletion({ override: [completionSource] }), customCmTheme],
         },
-        externalResources: ["https://cdn.jsdelivr.net/gh/yumma-lib/yumma-css@latest/dist/yumma.css"],
+        bundlerURL: "https://sandpack-bundler.codesandbox.io",
+        closableTabs: true,
         editorHeight: "90dvh",
         showInlineErrors: true,
         showLineNumbers: true,
         showRefreshButton: false,
         wrapContent: true,
       }}
-      files={{
-        "index.html": pageContent,
-      }}
+      template="react"
       theme={customSpTheme}
     />
   );
