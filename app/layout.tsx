@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: "Yumma Playground based on Sandpack.",
   icons: {
     icon: "https://play.yummacss.com/favicon.ico",
-    apple: "https://play.yummacss.com/apple-icon.png",
+    apple: "https://play.yummacss.com/apple-touch-icon.png",
   },
   openGraph: {
     title: "Yumma Playground",
