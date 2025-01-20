@@ -1,14 +1,14 @@
 import { autocompletion } from "@codemirror/autocomplete";
 import { completionSource } from "../completions";
 import { customCmTheme } from "../themes/cmTheme";
-import { index } from "../constants/content";
+import { defaultCode } from "../constants/content";
 import { Sandpack } from "@codesandbox/sandpack-react";
 import customSpTheme from "../themes/spTheme";
 
 const Playground: React.FC = () => {
   return (
     <Sandpack
-      files={{ "index.html": index }}
+      files={{ "index.html": defaultCode }}
       options={{
         codeEditor: { extensions: [autocompletion({ override: [completionSource] }), customCmTheme] },
         editorHeight: "90dvh",
