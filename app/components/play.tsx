@@ -10,12 +10,14 @@ const Playground: React.FC = () => {
     <Sandpack
       files={{ "index.html": defaultCode }}
       options={{
+        closableTabs: true,
         codeEditor: { extensions: [autocompletion({ override: [completionSource] }), customCmTheme] },
-        editorHeight: "90dvh",
+        editorHeight: "94dvh",
         externalResources: ["https://cdn.jsdelivr.net/gh/yumma-lib/yumma-css@latest/dist/yumma.css"],
         showInlineErrors: true,
         showLineNumbers: true,
         showRefreshButton: false,
+        showTabs: true,
         wrapContent: true,
       }}
       template="static"

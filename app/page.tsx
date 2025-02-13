@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <div className="p-2">
+      <div className="px-2">
         <Playground />
       </div>
     </>
