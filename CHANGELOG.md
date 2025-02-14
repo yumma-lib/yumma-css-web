@@ -9,6 +9,7 @@ All notable changes to the Yumma Play will be documented in this file.
     <b>Features</b>
 </summary>
 
+- Added CDN customization via code editor
 - Added code editor explorer
 - Added code editor tabs
 - Added support for custom css
