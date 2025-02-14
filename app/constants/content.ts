@@ -5,7 +5,7 @@ export const defaultCode: string = `<div class="ai-c d-f fd-c h-1/1 jc-c">
       A practical CSS framework with an abbreviated naming convention.
     </p>
   </div>
-</div>;`;
+</div>`;
 
 export const defaultStyles: string = `@import url("https://cdn.jsdelivr.net/gh/yumma-lib/yumma-css@latest/dist/yumma.css");
 
