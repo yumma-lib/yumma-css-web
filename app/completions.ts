@@ -4,12 +4,19 @@ import utilities from "./completions.json";
 export const utilityCompletions: Completion[] = utilities;
 
 export function completionSource(context: CompletionContext) {
-  let word = context.matchBefore(/\w*/);
+  const classMatch = context.matchBefore(/class="([^"]*)$/);
+  if (!classMatch) return null;
 
-  if (word?.from === word?.to && !context.explicit) return null;
+  const attributeValue = classMatch.text;
+  const tokenMatch = /(\w*)$/.exec(attributeValue);
+  const tokenPrefix = tokenMatch ? tokenMatch[1] : "";
+
+  const from = classMatch.from + (attributeValue.length - tokenPrefix.length);
+
+  const options = utilityCompletions.filter((c) => c.label.startsWith(tokenPrefix));
 
   return {
-    from: word ? word.from : 0,
-    options: utilityCompletions,
+    from,
+    options,
   };
 }

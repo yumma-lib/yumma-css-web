@@ -25,8 +25,6 @@
     "yummacss": "^2.1.0"
   },
   "devDependencies": {
-    "@types/dompurify": "^3.0.5",
-    "@types/lodash.debounce": "^4.0.9",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
