@@ -14,3 +14,22 @@ All notable changes to the Yumma Play will be documented in this file.
 - Added support for custom css
 
 </details>
+
+<details>
+
+<summary>
+    <b>Breaking changes</b>
+</summary>
+
+- None
+
+</details>
+
+<details>
+<summary>
+    <b>Fixes</b>
+</summary>
+
+- None
+
+</details>
