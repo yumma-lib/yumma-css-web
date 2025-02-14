@@ -52,7 +52,6 @@ const Playground: React.FC = () => {
                 extensions={[autocompletion({ override: [completionSource] }), customCmTheme, keymap.of(searchKeymap)]}
                 showInlineErrors
                 showLineNumbers
-                showRunButton={false}
                 showTabs
                 wrapContent
                 style={{ height: "calc(100dvh - 6rem)" }}
