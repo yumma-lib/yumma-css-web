@@ -28,11 +28,7 @@ const Playground: React.FC = () => {
         <SandpackFileExplorer />
         <SandpackCodeEditor
           closableTabs
-          extensions={[
-            autocompletion({ override: [completionSource] }),
-            customCmTheme,
-            keymap.of(searchKeymap),
-          ]}
+          extensions={[autocompletion({ override: [completionSource] }), customCmTheme, keymap.of(searchKeymap)]}
           showInlineErrors
           showLineNumbers
           showTabs

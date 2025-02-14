@@ -12,7 +12,7 @@ All notable changes to the Yumma Play will be documented in this file.
 - Added CDN customization via code editor
 - Added code editor explorer
 - Added code editor tabs
-- Added search (Ctrl+F/Ctrl+H) and multi-cursor capabilities
+- Added search (Ctrl+F/Ctrl+H) capabilities
 - Added support for custom css
 
 </details>
