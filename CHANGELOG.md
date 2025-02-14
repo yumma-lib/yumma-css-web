@@ -1,19 +1,16 @@
 # Changelog
 
-All notable changes to the Yumma CSS Play will be documented in this file.
+All notable changes to the Yumma Play will be documented in this file.
 
-## [0.2.0]
+## Changelog for 0.1.1 🎉
 
-### Added
+<details open>
+<summary>
+    <b>Features</b>
+</summary>
 
-- Add Console support
-- Add file Tab in code editor
-- Add React support
+- Added code editor explorer
+- Added code editor tabs
+- Added support for custom css
 
-### Changed
-
-- Update from `static` template to `react`
-
-### Removed
-
-- None
+</details>

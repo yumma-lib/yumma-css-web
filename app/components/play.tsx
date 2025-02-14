@@ -1,28 +1,46 @@
 import { autocompletion } from "@codemirror/autocomplete";
 import { completionSource } from "../completions";
 import { customCmTheme } from "../themes/cmTheme";
-import { defaultCode } from "../constants/content";
-import { Sandpack } from "@codesandbox/sandpack-react";
+import { defaultCode, defaultStyles } from "../constants/content";
 import customSpTheme from "../themes/spTheme";
+
+import {
+  Sandpack,
+  SandpackProvider,
+  SandpackLayout,
+  SandpackPreview,
+  SandpackCodeEditor,
+  SandpackFileExplorer,
+} from "@codesandbox/sandpack-react";
 
 const Playground: React.FC = () => {
   return (
-    <Sandpack
-      files={{ "index.html": defaultCode }}
-      options={{
-        closableTabs: true,
-        codeEditor: { extensions: [autocompletion({ override: [completionSource] }), customCmTheme] },
-        editorHeight: "94dvh",
-        externalResources: ["https://cdn.jsdelivr.net/gh/yumma-lib/yumma-css@latest/dist/yumma.css"],
-        showInlineErrors: true,
-        showLineNumbers: true,
-        showRefreshButton: false,
-        showTabs: true,
-        wrapContent: true,
-      }}
+    <SandpackProvider
+      files={{ "index.html": defaultCode, "styles.css": defaultStyles }}
       template="static"
       theme={customSpTheme}
-    />
+      options={{
+        externalResources: ["/styles.css"],
+      }}>
+      <SandpackLayout>
+        <SandpackFileExplorer />
+        <SandpackCodeEditor
+          closableTabs
+          extensions={[autocompletion({ override: [completionSource] }), customCmTheme]}
+          showInlineErrors
+          showLineNumbers
+          showTabs
+          wrapContent
+          style={{ height: "calc(100dvh - 4rem)" }}
+        />
+        <SandpackPreview
+          showOpenInCodeSandbox={false}
+          showRefreshButton={false}
+          style={{ height: "calc(100dvh - 4rem)" }}
+          title="Preview"
+        />
+      </SandpackLayout>
+    </SandpackProvider>
   );
 };
 

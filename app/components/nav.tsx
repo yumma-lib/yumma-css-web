@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Logo from "../../public/assets/logo.png";
+import Logo from "../../public/logo.png";
 
 const Navbar = () => {
   return (
