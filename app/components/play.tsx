@@ -2,6 +2,8 @@ import { autocompletion } from "@codemirror/autocomplete";
 import { completionSource } from "../completions";
 import { customCmTheme } from "../themes/cmTheme";
 import { defaultCode, defaultStyles } from "../constants/content";
+import { keymap } from "@codemirror/view";
+import { searchKeymap } from "@codemirror/search";
 import customSpTheme from "../themes/spTheme";
 
 import {
@@ -26,7 +28,11 @@ const Playground: React.FC = () => {
         <SandpackFileExplorer />
         <SandpackCodeEditor
           closableTabs
-          extensions={[autocompletion({ override: [completionSource] }), customCmTheme]}
+          extensions={[
+            autocompletion({ override: [completionSource] }),
+            customCmTheme,
+            keymap.of(searchKeymap),
+          ]}
           showInlineErrors
           showLineNumbers
           showTabs
