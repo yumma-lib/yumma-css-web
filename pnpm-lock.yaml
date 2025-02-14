@@ -11,6 +11,9 @@ importers:
       '@codemirror/autocomplete':
         specifier: ^6.18.4
         version: 6.18.6
+      '@codemirror/view':
+        specifier: ^6.36.2
+        version: 6.36.2
       '@codesandbox/sandpack-client':
         specifier: ^2.18.2
         version: 2.19.8
