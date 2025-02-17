@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import { useMediaQuery } from "react-responsive";
 import { autocompletion } from "@codemirror/autocomplete";
 import { completionSource } from "../completions";
 import { customCmTheme } from "../themes/cmTheme";
@@ -7,7 +8,6 @@ import { keymap } from "@codemirror/view";
 import { searchKeymap } from "@codemirror/search";
 import customSpTheme from "../themes/spTheme";
 import {
-  Sandpack,
   SandpackProvider,
   SandpackLayout,
   SandpackPreview,
@@ -16,21 +16,15 @@ import {
 } from "@codesandbox/sandpack-react";
 
 const Playground: React.FC = () => {
-  const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth < 768);
+  const isMobile = useMediaQuery({ maxWidth: 767 });
   const [showPreview, setShowPreview] = useState<boolean>(false);
-
-  useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth <= 768);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   return (
     <SandpackProvider
       files={{ "index.html": defaultCode, "styles.css": defaultStyles }}
       template="static"
       theme={customSpTheme}
-      options={{ externalResources: ["/styles.css"] }}>
+      options={{ externalResources: ["/styles.css"], visibleFiles: ["index.html"] }}>
       {isMobile ? (
         <>
           <div className="d-f jc-c p-2">
