@@ -7,7 +7,6 @@ import { keymap } from "@codemirror/view";
 import { searchKeymap } from "@codemirror/search";
 import customSpTheme from "../themes/spTheme";
 import {
-  Sandpack,
   SandpackProvider,
   SandpackLayout,
   SandpackPreview,
@@ -25,8 +24,8 @@ const Playground: React.FC = () => {
       theme={customSpTheme}
       options={{ externalResources: ["/styles.css"] }}>
       <div className="md:d-none d-f jc-c p-2">
-        <button className="tc-white" onClick={() => setShowPreview((prev) => !prev)}>
-          {showPreview ? "Show Editor" : "Show Preview"}
+        <button className="tc-white" onClick={() => {}}>
+          Show Editor / Show Preview
         </button>
       </div>
 
