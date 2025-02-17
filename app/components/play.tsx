@@ -16,7 +16,7 @@ import {
 } from "@codesandbox/sandpack-react";
 
 const Playground: React.FC = () => {
-  const isMobile = useMediaQuery({ maxWidth: 767 });
+  const isLarge = useMediaQuery({ maxWidth: 1024 });
   const [showPreview, setShowPreview] = useState<boolean>(false);
 
   return (
@@ -24,10 +24,10 @@ const Playground: React.FC = () => {
       files={{ "index.html": defaultCode, "styles.css": defaultStyles }}
       template="static"
       theme={customSpTheme}
-      options={{ externalResources: ["/styles.css"], visibleFiles: ["index.html"] }}>
-      {isMobile ? (
+      options={{ externalResources: ["/styles.css"] }}>
+      {isLarge ? (
         <>
-          <div className="d-f jc-c p-2">
+          <div className="d-f jc-c py-3">
             <button className="tc-white" onClick={() => setShowPreview((prev) => !prev)}>
               {showPreview ? "Show Editor" : "Show Preview"}
             </button>
@@ -37,7 +37,7 @@ const Playground: React.FC = () => {
               <SandpackPreview
                 showOpenInCodeSandbox={false}
                 showRefreshButton={false}
-                style={{ height: "calc(100dvh - 6rem)" }}
+                style={{ height: "calc(100dvh - 6.5rem)" }}
                 title="Preview"
               />
             ) : (
