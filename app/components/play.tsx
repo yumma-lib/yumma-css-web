@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import { autocompletion } from "@codemirror/autocomplete";
-import { completionSource } from "../completions";
 import { customCmTheme } from "../themes/cmTheme";
 import { defaultCode, defaultStyles } from "../constants/content";
 import { keymap } from "@codemirror/view";
@@ -43,7 +42,7 @@ const Playground: React.FC = () => {
             ) : (
               <SandpackCodeEditor
                 closableTabs
-                extensions={[autocompletion({ override: [completionSource] }), customCmTheme, keymap.of(searchKeymap)]}
+                extensions={[customCmTheme, keymap.of(searchKeymap)]}
                 showInlineErrors
                 showLineNumbers
                 showTabs
@@ -58,7 +57,7 @@ const Playground: React.FC = () => {
           <SandpackFileExplorer />
           <SandpackCodeEditor
             closableTabs
-            extensions={[autocompletion({ override: [completionSource] }), customCmTheme, keymap.of(searchKeymap)]}
+            extensions={[customCmTheme, keymap.of(searchKeymap)]}
             showInlineErrors
             showLineNumbers
             showTabs
