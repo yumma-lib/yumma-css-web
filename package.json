@@ -1,6 +1,6 @@
 {
   "author": "Renildo Pereira",
-  "description": "Yumma Playground, a based on Sandpack.",
+  "description": "Yumma CSS Play, a based on Sandpack.",
   "homepage": "https://yummacss.com",
   "license": "MIT",
   "name": "yummacss-css-play",
@@ -17,8 +17,8 @@
     "@codemirror/search": "^6.5.9",
     "@codemirror/view": "^6.36.2",
     "@codesandbox/sandpack-client": "^2.18.2",
-      "@codesandbox/sandpack-react": "^2.18.2",
-      "lodash.debounce":"^4.0.8",
+    "@codesandbox/sandpack-react": "^2.18.2",
+    "lodash.debounce": "^4.0.8",
     "lucide-react": "^0.475.0",
     "next": "^15.0.3",
     "prettier": "^3.5.1",

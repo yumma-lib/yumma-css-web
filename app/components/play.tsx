@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useMediaQuery } from "react-responsive";
-import { autocompletion } from "@codemirror/autocomplete";
 import { customCmTheme } from "../themes/cmTheme";
 import { defaultCode, defaultStyles } from "../constants/content";
 import { keymap } from "@codemirror/view";
