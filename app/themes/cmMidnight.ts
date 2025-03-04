@@ -1,7 +1,7 @@
 import { EditorView } from "@codemirror/view";
-import customSpTheme from "./spTheme";
+import customSpTheme from "./spMidnight";
 
-export const customCmTheme = EditorView.theme({
+export const midnight = EditorView.theme({
   ".cm-tooltip": {
     backgroundColor: customSpTheme.colors.surface1,
     color: `${customSpTheme.syntax.plain}`,
