@@ -10,11 +10,11 @@ function MonacoEditor() {
       <FileTabs />
       <div style={{ flex: 1, paddingTop: 8, background: "#1e1e1e" }}>
         <Editor
+          defaultValue={code}
+          key={sandpack.activeFile}
+          onChange={(value) => updateCode(value || "")}
           options={{ minimap: { enabled: false } }}
           theme="vs-dark"
-          key={sandpack.activeFile}
-          defaultValue={code}
-          onChange={(value) => updateCode(value || "")}
         />
       </div>
     </SandpackStack>
