@@ -1,19 +1,10 @@
-import React, { useState } from "react";
-import { useMediaQuery } from "react-responsive";
-import { midnight } from "../themes/cmMidnight";
 import { defaultCode, defaultStyles } from "../constants/content";
-import { keymap } from "@codemirror/view";
-import { searchKeymap } from "@codemirror/search";
+import { Panel, PanelGroup, PanelResizeHandle } from "react-resizable-panels";
+import { SandpackProvider, SandpackLayout, SandpackPreview, SandpackFileExplorer } from "@codesandbox/sandpack-react";
+import { useMediaQuery } from "react-responsive";
 import customSpTheme from "../themes/spMidnight";
 import MonacoEditor from "./monaco";
-import { Panel, PanelGroup, PanelResizeHandle } from "react-resizable-panels";
-import {
-  SandpackProvider,
-  SandpackLayout,
-  SandpackPreview,
-  SandpackCodeEditor,
-  SandpackFileExplorer,
-} from "@codesandbox/sandpack-react";
+import React, { useState } from "react";
 
 const Playground: React.FC = () => {
   const isLarge = useMediaQuery({ maxWidth: 1024 });
@@ -41,15 +32,7 @@ const Playground: React.FC = () => {
                 title="Preview"
               />
             ) : (
-              <SandpackCodeEditor
-                closableTabs
-                extensions={[midnight, keymap.of(searchKeymap)]}
-                showInlineErrors
-                showLineNumbers
-                showTabs
-                wrapContent
-                style={{ height: "calc(100dvh - 6rem)" }}
-              />
+              <MonacoEditor />
             )}
           </SandpackLayout>
         </>
