@@ -5,6 +5,7 @@ import { defaultCode, defaultStyles } from "../constants/content";
 import { keymap } from "@codemirror/view";
 import { searchKeymap } from "@codemirror/search";
 import customSpTheme from "../themes/spMidnight";
+import MonacoEditor from "./monaco";
 import {
   SandpackProvider,
   SandpackLayout,
@@ -63,6 +64,7 @@ const Playground: React.FC = () => {
             wrapContent
             style={{ height: "calc(100dvh - 4rem)" }}
           />
+          {/* <MonacoEditor /> */}
           <SandpackPreview
             showOpenInCodeSandbox={false}
             showRefreshButton={false}
