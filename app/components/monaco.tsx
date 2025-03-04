@@ -11,7 +11,6 @@ function MonacoEditor() {
       <div style={{ flex: 1, paddingTop: 8, background: "#1e1e1e" }}>
         <Editor
           options={{ minimap: { enabled: false } }}
-          language="javascript"
           theme="vs-dark"
           key={sandpack.activeFile}
           defaultValue={code}
