@@ -6,6 +6,7 @@ import { keymap } from "@codemirror/view";
 import { searchKeymap } from "@codemirror/search";
 import customSpTheme from "../themes/spMidnight";
 import MonacoEditor from "./monaco";
+import { Panel, PanelGroup, PanelResizeHandle } from "react-resizable-panels";
 import {
   SandpackProvider,
   SandpackLayout,
@@ -54,17 +55,8 @@ const Playground: React.FC = () => {
         </>
       ) : (
         <SandpackLayout>
-          <SandpackFileExplorer />
-          <SandpackCodeEditor
-            closableTabs
-            extensions={[midnight, keymap.of(searchKeymap)]}
-            showInlineErrors
-            showLineNumbers
-            showTabs
-            wrapContent
-            style={{ height: "calc(100dvh - 4rem)" }}
-          />
-          {/* <MonacoEditor /> */}
+          <SandpackFileExplorer style={{ height: "calc(100dvh - 4rem)" }} />
+          <MonacoEditor />
           <SandpackPreview
             showOpenInCodeSandbox={false}
             showRefreshButton={false}

@@ -1,20 +1,23 @@
-import Editor from "@monaco-editor/react";
+import { handleMount } from "../themes/midnight";
 import { useActiveCode, SandpackStack, FileTabs, useSandpack } from "@codesandbox/sandpack-react";
+import Editor from "@monaco-editor/react";
 
 function MonacoEditor() {
   const { code, updateCode } = useActiveCode();
   const { sandpack } = useSandpack();
 
   return (
-    <SandpackStack style={{ height: "100vh", margin: 0 }}>
+    <SandpackStack style={{ height: "calc(100dvh - 4rem)", margin: 0 }}>
       <FileTabs />
-      <div style={{ flex: 1, paddingTop: 8, background: "#1e1e1e" }}>
+      <div style={{ flex: 1 }}>
         <Editor
           defaultValue={code}
+          onMount={handleMount}
           key={sandpack.activeFile}
           onChange={(value) => updateCode(value || "")}
           options={{ minimap: { enabled: false } }}
-          theme="vs-dark"
+          theme="midnight"
+          language="html"
         />
       </div>
     </SandpackStack>

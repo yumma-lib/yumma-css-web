@@ -44,6 +44,9 @@ importers:
       react-dom:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
+      react-resizable-panels:
+        specifier: ^2.1.7
+        version: 2.1.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-responsive:
         specifier: ^10.0.0
         version: 10.0.0(react@18.3.1)
@@ -1433,6 +1436,12 @@ packages:
 
   react-is@17.0.2:
     resolution: {integrity: sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==}
+
+  react-resizable-panels@2.1.7:
+    resolution: {integrity: sha512-JtT6gI+nURzhMYQYsx8DKkx6bSoOGFp7A3CwMrOb8y5jFHFyqwo9m68UhmXRw57fRVJksFn1TSlm3ywEQ9vMgA==}
+    peerDependencies:
+      react: ^16.14.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^19.0.0-rc
+      react-dom: ^16.14.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^19.0.0-rc
 
   react-responsive@10.0.0:
     resolution: {integrity: sha512-N6/UiRLGQyGUqrarhBZmrSmHi2FXSD++N5VbSKsBBvWfG0ZV7asvUBluSv5lSzdMyEVjzZ6Y8DL4OHABiztDOg==}
@@ -3357,6 +3366,11 @@ snapshots:
   react-is@16.13.1: {}
 
   react-is@17.0.2: {}
+
+  react-resizable-panels@2.1.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+    dependencies:
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
   react-responsive@10.0.0(react@18.3.1):
     dependencies:

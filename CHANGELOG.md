@@ -13,7 +13,7 @@ All notable changes to the Yumma Play will be documented in this file.
 - Added CDN customization via code editor
 - Added code editor explorer
 - Added code editor tabs
-- Added search (Ctrl+F/Ctrl+H) capabilities
+- Added Monaco Editor support
 - Added support for custom css
 
 </details>
@@ -24,7 +24,7 @@ All notable changes to the Yumma Play will be documented in this file.
     <b>Breaking changes</b>
 </summary>
 
-- None
+- Removed utility classes auto-completion
 
 </details>
 
