@@ -1,11 +1,17 @@
 import { handleMount } from "../themes/midnight";
-import { useActiveCode, SandpackStack, FileTabs, useSandpack } from "@codesandbox/sandpack-react";
+import {
+  useActiveCode,
+  SandpackStack,
+  FileTabs,
+  SandpackFileExplorer,
+  RoundedButton,
+  useSandpack,
+} from "@codesandbox/sandpack-react";
 import Editor from "@monaco-editor/react";
 
 function MonacoEditor() {
   const { code, updateCode } = useActiveCode();
   const { sandpack } = useSandpack();
-
   return (
     <SandpackStack style={{ height: "calc(100dvh - 4rem)", margin: 0 }}>
       <FileTabs />

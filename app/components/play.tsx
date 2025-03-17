@@ -38,7 +38,6 @@ const Playground: React.FC = () => {
         </>
       ) : (
         <SandpackLayout>
-          <SandpackFileExplorer style={{ height: "calc(100dvh - 4rem)" }} />
           <MonacoEditor />
           <SandpackPreview
             showOpenInCodeSandbox={false}

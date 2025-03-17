@@ -11,7 +11,6 @@ All notable changes to the Yumma Play will be documented in this file.
 
 - Added better support for small devices
 - Added CDN customization via code editor
-- Added code editor explorer
 - Added code editor tabs
 - Added Monaco Editor support
 - Added support for custom css
