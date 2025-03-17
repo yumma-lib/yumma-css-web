@@ -9,7 +9,7 @@
 </div>
 
 <p align="center">
-  A practical CSS framework with an abbreviated naming convention.
+  A CSS framework for the web with abbreviated styles.
   <br>
   <a href="https://yummacss.com"><strong>Read the documentation ↝</strong></a>
 </p>
@@ -25,7 +25,7 @@
 I'd love your help with Yumma CSS. I've included some links below which you might find useful.
 
 - [Join us on the `#yummacss` channel on Discord](https://discord.gg/V6s5jg5TfX)
-  
+
 ### Licensing
 
 MIT — Copyright (c) 2023–present [Renildo Pereira](https://github.com/yumma-lib/yumma-css/graphs/contributors).
